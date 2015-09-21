@@ -14,50 +14,50 @@
 
     <body>
         <div class="container">
-            <div class="row">
+            <div class="row center">
                 <form action="http://www.swolebrain.com:4003/email" method="post"
                 role="form" id="form" name="contactForm" onsubmit="return validateForm(document.contactForm);">
                     
                     <div class="container">
-                        <div class="row">
-                            <div class="row" style="background-color: #e0e0e0">
-                                <div class="col s12 m4">
-                                    <div class="input-field col s6">
-                                       <input type="text" id="style" name="style" class="validate" required>
-                                       <label for="style">STYLE</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                       <input type="text" id="color" name="color" class="validate" required>
-                                       <label for="color">COLOR</label>
-                                    </div>
+                        
+                        <div class="row" style="background-color: #e0e0e0">
+                            <div class="col s12 m4">
+                                <div class="input-field col s6">
+                                   <input type="text" id="style" name="style" class="validate" required>
+                                   <label for="style">STYLE</label>
                                 </div>
+                                <div class="input-field col s6">
+                                   <input type="text" id="color" name="color" class="validate" required>
+                                   <label for="color">COLOR</label>
+                                </div>
+                            </div>
 
-                                <div class="col s12 m12 l8">
-                                    <div class="input-field col s2">
-                                       <input type="number" id="size" name="size" class="validate" required>
-                                       <label for="size">XS</label>
-                                    </div>
-                                    <div class="input-field col s2">
-                                       <input type="number" id="size" name="size" class="validate" required>
-                                       <label for="size">S</label>
-                                    </div>
-                                    <div class="input-field col s2">
-                                       <input type="number" id="size" name="size" class="validate" required>
-                                       <label for="size">M</label>
-                                    </div>
-                                    <div class="input-field col s2">
-                                       <input type="number" id="size" name="size" class="validate" required>
-                                       <label for="size">L</label>
-                                    </div>
-                                    <div class="input-field col s2">
-                                       <input type="number" id="size" name="size" class="validate" required>
-                                       <label for="size">XL</label>
-                                    </div>
-                                    <div class="input-field col s2">
-                                       <input type="number" id="size" name="size" class="validate" required>
-                                       <label for="size">XXL</label>
-                                    </div>
+                            <div class="col s12 m12 l8">
+                                <div class="input-field col s2">
+                                   <input type="number" id="size" name="size" class="validate" required>
+                                   <label for="size">XS</label>
                                 </div>
+                                <div class="input-field col s2">
+                                   <input type="number" id="size" name="size" class="validate" required>
+                                   <label for="size">S</label>
+                                </div>
+                                <div class="input-field col s2">
+                                   <input type="number" id="size" name="size" class="validate" required>
+                                   <label for="size">M</label>
+                                </div>
+                                <div class="input-field col s2">
+                                   <input type="number" id="size" name="size" class="validate" required>
+                                   <label for="size">L</label>
+                                </div>
+                                <div class="input-field col s2">
+                                   <input type="number" id="size" name="size" class="validate" required>
+                                   <label for="size">XL</label>
+                                </div>
+                                <div class="input-field col s2">
+                                   <input type="number" id="size" name="size" class="validate" required>
+                                   <label for="size">XXL</label>
+                                </div>
+                            </div>
                            
                                 <div class="col s12">
                                     
@@ -84,7 +84,7 @@
                                 </div>
                                 
                             </div>
-                        </div>
+                        
                     </div>
                     
                     <div class="container">
@@ -174,19 +174,19 @@
                         </div>    
                         <div class="row">    
                             <div class="input-field col s12 m12 l6 no-padding">
-                                <div class="col s12">
-                                    <i class="material-icons prefix">location_on</i>
+                                <div class="input-field col s12">
+                                    <i class="mdi-action-room prefix"></i>
                                     <input type="text" id="store-address" name="store-address" class="validate" required>
                                     <label for="store-address">Store Address:</label>
                                 </div>
                                 
                                 <div class="col s6">
                                     <i class="material-icons prefix"></i>
-                                    <input type="text" id="store-address-city" name="store-address-city" class="validate" placeholder="City" required>  
+                                    <input type="text" id="address-city" name="address-city" class="validate" placeholder="City" required>  
                                 </div>
                                 
                                 <div class="col s3">
-                                    <select class="browser-default" name="state-1" id="state" required>
+                                    <select class="browser-default" name="state-1" id="state-1" required>
                                         <option value="" disabled selected>--</option>    
                                         <option value="AL">AL</option>
                                         <option value="AK">AK</option>
@@ -252,95 +252,96 @@
                                 </div>
                                 
                                 <div class="col s3">
-                                    <input type="text" id="store-address-zip-code" name="store-address-zip-code" class="validate" placeholder="Zip-code" required>
+                                    <input type="text" id="address-zip-code" name="address-zip-code" class="validate" placeholder="Zip-code" required>
                                 </div>  
                             </div>
-                        
+                        </div>
                             
-                            
-                            <div class="input-field col s12 m12 l6 no-padding">
-                                <div class="col s12">
-                                    <i class="material-icons prefix">markunread_mailbox</i>
-                                    <input type="text" id="store-address" name="store-address" class="validate" required>
-                                    <label for="store-address">Ship to:</label>
+                            <div class="row">
+                                <div class="input-field col s12 m12 l6 no-padding">
+                                    <div class="input-field col s12">
+                                         <i class="mdi-action-markunread-mailbox prefix"></i>
+                                        <input type="text" id="ship-address" name="ship-address" class="validate" required>
+                                        <label for="ship-address">Ship to:</label>
+                                    </div>
+
+                                    <div class="col s6">
+                                        <i class="material-icons prefix"></i>
+                                        <input type="text" id="ship-city" name="ship-city" class="validate" placeholder="City" required>  
+                                    </div>
+
+                                    <div class="col s3">
+                                        <select class="browser-default" name="state-2" id="state" required>
+                                            <option value="" disabled selected>--</option>    
+                                            <option value="AL">AL</option>
+                                            <option value="AK">AK</option>
+                                            <option value="AZ">AZ</option>
+                                            <option value="AR">AR</option>
+                                            <option value="CA">CA</option>
+                                            <option value="CO">CO</option>
+                                            <option value="CT">CT</option>
+                                            <option value="DE">DE</option>
+                                            <option value="DC">DC</option>
+                                            <option value="FL">FL</option>
+                                            <option value="GA">GA</option>
+                                            <option value="HI">HI</option>
+                                            <option value="ID">ID</option>
+                                            <option value="IL">IL</option>
+                                            <option value="IN">IN</option>
+                                            <option value="IA">IA</option>
+                                            <option value="KS">KS</option>
+                                            <option value="KY">KY</option>
+                                            <option value="LA">LA</option>
+                                            <option value="ME">ME</option>
+                                            <option value="MD">MD</option>
+                                            <option value="MA">MA</option>
+                                            <option value="MI">MI</option>
+                                            <option value="MN">MN</option>
+                                            <option value="MS">MS</option>
+                                            <option value="MO">MO</option>
+                                            <option value="MT">MT</option>
+                                            <option value="NE">NE</option>
+                                            <option value="NV">NV</option>
+                                            <option value="NH">NH</option>
+                                            <option value="NJ">NJ</option>
+                                            <option value="NM">NM</option>
+                                            <option value="NY">NY</option>
+                                            <option value="NC">NC</option>
+                                            <option value="ND">ND</option>
+                                            <option value="OH">OH</option>
+                                            <option value="OK">OK</option>
+                                            <option value="OR">OR</option>
+                                            <option value="PA">PA</option>
+                                            <option value="RI">RI</option>
+                                            <option value="SC">SC</option>
+                                            <option value="SD">SD</option>
+                                            <option value="TN">TN</option>
+                                            <option value="TX">TX</option>
+                                            <option value="UT">UT</option>
+                                            <option value="VT">VT</option>
+                                            <option value="VA">VA</option>
+                                            <option value="WA">WA</option>
+                                            <option value="WV">WV</option>
+                                            <option value="WI">WI</option>
+                                            <option value="WY">WY</option>
+                                            <option value="AS">American Samoa</option>
+                                            <option value="GU">Guam</option>
+                                            <option value="MP">Northern Mariana Islands</option>
+                                            <option value="PR">Puerto Rico</option>
+                                            <option value="UM">United States Minor Outlying Islands</option>
+                                            <option value="VI">Virgin Islands</option>
+                                            <option value="AA">Armed Forces Americas</option>
+                                            <option value="AP">Armed Forces Pacific</option>
+                                            <option value="AE">Armed Forces Others</option>    
+                                        </select>
+                                    </div>
+
+                                    <div class="col s3">
+                                        <input type="text" id="ship-zip-code" name="ship-zip-code" class="validate" placeholder="Zip-code" required>
+                                    </div>  
                                 </div>
-                                
-                                <div class="col s6">
-                                    <i class="material-icons prefix"></i>
-                                    <input type="text" id="store-address-city" name="store-address-city" class="validate" placeholder="City" required>  
-                                </div>
-                                
-                                <div class="col s3">
-                                    <select class="browser-default" name="state-2" id="state" required>
-                                        <option value="" disabled selected>--</option>    
-                                        <option value="AL">AL</option>
-                                        <option value="AK">AK</option>
-                                        <option value="AZ">AZ</option>
-                                        <option value="AR">AR</option>
-                                        <option value="CA">CA</option>
-                                        <option value="CO">CO</option>
-                                        <option value="CT">CT</option>
-                                        <option value="DE">DE</option>
-                                        <option value="DC">DC</option>
-                                        <option value="FL">FL</option>
-                                        <option value="GA">GA</option>
-                                        <option value="HI">HI</option>
-                                        <option value="ID">ID</option>
-                                        <option value="IL">IL</option>
-                                        <option value="IN">IN</option>
-                                        <option value="IA">IA</option>
-                                        <option value="KS">KS</option>
-                                        <option value="KY">KY</option>
-                                        <option value="LA">LA</option>
-                                        <option value="ME">ME</option>
-                                        <option value="MD">MD</option>
-                                        <option value="MA">MA</option>
-                                        <option value="MI">MI</option>
-                                        <option value="MN">MN</option>
-                                        <option value="MS">MS</option>
-                                        <option value="MO">MO</option>
-                                        <option value="MT">MT</option>
-                                        <option value="NE">NE</option>
-                                        <option value="NV">NV</option>
-                                        <option value="NH">NH</option>
-                                        <option value="NJ">NJ</option>
-                                        <option value="NM">NM</option>
-                                        <option value="NY">NY</option>
-                                        <option value="NC">NC</option>
-                                        <option value="ND">ND</option>
-                                        <option value="OH">OH</option>
-                                        <option value="OK">OK</option>
-                                        <option value="OR">OR</option>
-                                        <option value="PA">PA</option>
-                                        <option value="RI">RI</option>
-                                        <option value="SC">SC</option>
-                                        <option value="SD">SD</option>
-                                        <option value="TN">TN</option>
-                                        <option value="TX">TX</option>
-                                        <option value="UT">UT</option>
-                                        <option value="VT">VT</option>
-                                        <option value="VA">VA</option>
-                                        <option value="WA">WA</option>
-                                        <option value="WV">WV</option>
-                                        <option value="WI">WI</option>
-                                        <option value="WY">WY</option>
-                                        <option value="AS">American Samoa</option>
-                                        <option value="GU">Guam</option>
-                                        <option value="MP">Northern Mariana Islands</option>
-                                        <option value="PR">Puerto Rico</option>
-                                        <option value="UM">United States Minor Outlying Islands</option>
-                                        <option value="VI">Virgin Islands</option>
-                                        <option value="AA">Armed Forces Americas</option>
-                                        <option value="AP">Armed Forces Pacific</option>
-                                        <option value="AE">Armed Forces Others</option>    
-                                    </select>
-                                </div>
-                                
-                                <div class="col s3">
-                                    <input type="text" id="store-address-zip-code" name="store-address-zip-code" class="validate" placeholder="Zip-code" required>
-                                </div>  
-                            </div>
-                        </div> 
+                              </div> 
+                             
                         
                         <div class="row p-top">
                             <input type= "hidden" name="dest_email" value="velozmontero@gmail.com">
